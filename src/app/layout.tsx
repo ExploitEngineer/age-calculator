@@ -11,6 +11,18 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Age Calculator",
   description: "Age Calculator made using NextJS",
+  openGraph: {
+    type: "website",
+    title: "Age Calculator",
+    description: "Age Calculator made using NextJS",
+    images: [
+      {
+        url: "https://imgur.com/gIAJ7Stl.png",
+        width: 1200,
+        height: 600,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
