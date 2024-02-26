@@ -33,7 +33,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl flex flex-col gap-2 border bg-white px-6 mx-2 rounded-3xl py-8 rounded-br-[100px] overflow-hidden relative shadow-xl shadow-zinc-200">
+    <div className="w-full max-w-3xl flex flex-col gap-2 border bg-white px-6 mx-2 rounded-3xl py-8 rounded-br-[100px] overflow-hidden relative shadow-md md:shadow-xl shadow-zinc-200">
       <label className="md:text-sm px-2 text-xs text-zinc-500" htmlFor="dob">
         Enter DOB
       </label>

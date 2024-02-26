@@ -3,7 +3,7 @@
 const Tag = () => {
   return (
     <a
-      href="https://github.com/Xeven777"
+      href="https://github.com/Xeven777/age-calculator"
       className="z-20 fixed top-0 right-6 md:right-24"
       target="_blank"
       rel="noopener noreferrer"
