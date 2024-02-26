@@ -22,7 +22,7 @@ const Calculator = () => {
     const ageDifMs = Date.now() - birthDate.getTime();
     const ageDate = new Date(ageDifMs);
     const years = (ageDate.getUTCFullYear() - 1970).toString();
-    const months = (ageDate.getUTCMonth() + 1).toString();
+    const months = ageDate.getUTCMonth().toString();
     const days = (ageDate.getUTCDate() - 1).toString();
 
     setAge({
