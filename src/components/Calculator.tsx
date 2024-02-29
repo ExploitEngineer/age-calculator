@@ -38,14 +38,15 @@ const Calculator = () => {
         Enter DOB
       </label>
       <input
-        className="border max-w-lg mb-4 h-10 px-3 rounded-lg border-purple-200 accent-violet-500"
-        type="date"
-        required
-        name="dob"
-        id="dob"
-        value={dob}
-        onChange={(e) => setDob(e.target.value)}
-      />
+  className="border max-w-lg mb-4 h-10 px-3 rounded-lg border-purple-200 accent-violet-500"
+  type="date"
+  required
+  name="dob"
+  id="dob"
+  value={dob}
+  max={new Date().toISOString().split("T")[0]}
+  onChange={(e) => setDob(e.target.value)}
+/>
       <button
         title="Calculate Age"
         type="submit"
