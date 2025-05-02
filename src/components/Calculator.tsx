@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import icon from "../components/icon-arrow.svg";
 import Image from "next/image";
+import { Input } from "@/components/ui/input";
 
 const Calculator = () => {
   const [dob, setDob] = useState("");
@@ -37,16 +38,16 @@ const Calculator = () => {
       <label className="md:text-sm px-2 text-xs text-zinc-500" htmlFor="dob">
         Enter DOB
       </label>
-      <input
-  className="border max-w-lg mb-4 h-10 px-3 rounded-lg border-purple-200 accent-violet-500"
-  type="date"
-  required
-  name="dob"
-  id="dob"
-  value={dob}
-  max={new Date().toISOString().split("T")[0]}
-  onChange={(e) => setDob(e.target.value)}
-/>
+      <Input
+        className="border max-w-lg mb-4 h-10 px-3 rounded-lg border-purple-200 accent-violet-500"
+        type="date"
+        required
+        name="dob"
+        id="dob"
+        value={dob}
+        max={new Date().toISOString().split("T")[0]}
+        onChange={(e) => setDob(e.target.value)}
+      />
       <button
         title="Calculate Age"
         type="submit"
